@@ -13,21 +13,19 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +0 ~/.config/nvim/init\ ee:q.lua
+badd +0 ~/.config/nvim/lua/plugins/tokyonight.nvim.lua
 argglobal
 %argdel
 argglobal
 enew
-file /NvimTree_1
-balt ~/.config/nvim/init\ ee:q.lua
-setlocal fdm=manual
+setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=99
 setlocal fml=1
 setlocal fdn=20
-setlocal nofen
+setlocal fen
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
