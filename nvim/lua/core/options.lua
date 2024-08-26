@@ -1,7 +1,7 @@
 vim.g.mapleader=" "
 vim.g.maplocalleader = "\\"
-vim.env.XDG_DATA_HOME = '~/.config/nvim'
-vim.env.XDG_CONFIG_HOME = '~/.config'
+vim.env.XDG_DATA_HOME = '/home/theoroom/.config/nvim'
+vim.env.XDG_CONFIG_HOME = '/home/theoroom/.config'
 local opt = vim.opt
 -- 行号
 opt.number =  true 	--显示行号。
